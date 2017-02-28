@@ -1,0 +1,30 @@
+<div id="contentBx">
+    <% if @boats %>
+        <% @boats.each do |boat| %>
+        <div id="boatBx">
+
+            <div id="boatName">
+              <%= link_to boat.name, boat_path(boat) %>
+            </div>
+
+            <div id="boatCapacity">
+              <p>Capacity</p>
+              <p><%= boat.capacity %></p>
+            </div>
+
+            <div id="Photos">
+              <li><%= link_to 'Photos', photos_path %></li>
+            </div>
+
+            <div id="UploadPhoto">
+              <li><%= link_to 'Upload Your Photo', new_photo_path %></li>
+            </div>
+
+        </div>
+        <% end %>
+    <% end %>
+</div>
+
+
+
+<p id="notice"><%= notice %></p>

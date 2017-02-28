@@ -1,0 +1,147 @@
+
+/* ======= ======= ======= ======= =======  layout  ======= ======= ======= ======= ======= */
+#topPgBx{
+  background: linear-gradient(#E0EAFC,#CFDEF3,#e6f0ff);
+  height: 300px;
+  width: 100%;
+}
+.newbut {
+  display:block;
+}
+.nobut {
+  display:none;
+}
+/* ======= ======= header ======= ======= */
+#header {
+  background-color: ghostwhite;
+  border: 2px solid purple;
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+}
+/*#menuBtn{
+  border: 1px solid;
+  height: 20px;
+  width: 70px;
+  float: left;
+}*/
+
+/* ======= ======= yeild ======= ======= */
+#section{
+  background: linear-gradient(#ecf0f1,#CFDEF3,#E0EAFC);
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+#yield {
+  background: aliceblue;
+  height: 1500px;
+}
+
+/* ======= ======= ======= ======= =======  content  ======= ======= ======= ======= ======= */
+
+/* ======= ======= user:home ======= ======= */
+#contentBx{
+  background: linear-gradient(#ecf0f1,#CFDEF3,#E0EAFC);
+  height: auto;
+  width: 40%;
+
+}
+#jobBx{
+  background-image: url(seaBg.jpeg);
+  height: 400px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+#jobTitle{
+/*  border: 1px solid black;*/
+  height: 50px;
+  width: 50%;
+  font-size: 30px;
+  text-align: center;
+  float: left;
+  margin-top: 6%;
+}
+#jobCost{
+  border: 1px solid black;
+  height: 70px;
+  width: 18%;
+  text-align: center;
+  float: left;
+  margin-top: 6%;
+  margin-left: 12%;
+}
+#jobDescript{
+/*  border: 1px solid black;*/
+  height: 130px;
+  width: 40%;
+  float: left;
+  margin-top: 6%;
+  margin-left: 6%;
+}
+
+#jobCustomer{
+  border: 1px solid black;
+  height: 70px;
+  width: 15%;
+  float: left;
+  margin-top: 6%;
+  margin-left: 15%;
+  text-align: center;
+}
+#jobEdit{
+  background-color: tan;
+  height: 20px;
+  width: 15%;
+  float: right;
+  margin-top: 2%;
+  margin-left: 12%;
+
+}
+#jobDel{
+  background-color: tan;
+  height: 20px;
+  width: 15%;
+  float: right;
+  margin-top: 2%;
+  margin-left: 12%;
+}
+/* ======= ======= job:show ======= ======= */
+#boatBx{
+  background-image: url(seaBg.jpeg);
+  height: 415px;
+  width: 100%;
+  margin-bottom: 120px;
+}
+#boatName{
+  border: 1px solid black;
+  height: 50px;
+  width: 50%;
+  font-size: 30px;
+  text-align: center;
+  float: left;
+  margin-top: 6%;
+}
+#boatCapacity{
+  border: 1px solid black;
+  height: 70px;
+  width: 18%;
+  text-align: center;
+  float: left;
+  margin-top: 6%;
+  margin-left: 12%;
+}
+
+/* ======= ======= photobar ======= ======= */
+#photoBxLrg{
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+}
+#photoBxSm{
+border: 1px solid;
+height: 100px;
+width: 200px;
+}

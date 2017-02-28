@@ -1,0 +1,38 @@
+
+
+
+<div id="contentBx">
+    <% if @jobs %>
+        <% @jobs.each do |job| %>
+        <div id="jobBx">
+
+            <div id="jobTitle">
+              <%= link_to job.name, job_path(job) %>
+            </div>
+
+            <div id="jobCost">
+              <p>cost</p>
+              <p><%= job.cost %></p>
+            </div>
+
+            <div id="jobDescript">
+              <p><%= job.description %></p>
+            </div>
+
+            <div id="jobCustomer">
+              <p>Customer</p>
+              <p><%= job.customer %></p>
+            </div>
+
+            <div id="jobEdit">
+              <%= link_to 'Edit', edit_job_path(job) %>
+            </div>
+
+            <div id="jobDel">
+              <%= link_to 'Delete', job, method: :delete, data: { confirm: 'Are you sure?' } %>
+            </div>
+
+        </div>
+        <% end %>
+    <% end %>
+</div>

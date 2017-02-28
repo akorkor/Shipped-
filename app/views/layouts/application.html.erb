@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ShippedProj</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <!-- ==== header ==== -->
+    <div id="topPgBx">
+      <div id="header" >
+          <p></p>
+          <%= render :partial => "/users/menu" %>
+      </div>
+    </div>
+
+    <div id="section">
+
+        <%= yield %>
+
+    </div>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <!-- ==== alert container ==== -->
+    <div class="container">
+      <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>">
+          <%= value %>
+        </div>
+      <% end %>
+    </div>
+  </body>
+</html>
